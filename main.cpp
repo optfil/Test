@@ -16,9 +16,9 @@ int main()
 	//System sys{1.0, 1.0, 0.1, 0.0, 0.0, 0.0, 1.0, 0.0};
 	
 	std::cout << sys.t() << ' ' << sys.x() << ' ' << sys.y() << '\n';
-	for (int i = 0; i < 1000; ++i)
+	for (int i = 0; i < 10000; ++i)
 	{
-		sys.make_step(1e-2);
+		sys.make_step(1e-4);
 		if (i % 10 == 0)
 			std::cout << sys.t() << ' ' << sys.x() << ' ' << sys.y() << '\n';
 	}
